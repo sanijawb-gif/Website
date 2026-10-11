@@ -30,7 +30,7 @@ body {
     font-weight: bold;
     font-size: 16px;
     padding: 10px 0;
-    position: relative; /*allows me to use left, right, botoom*/
+    position: relative; /*allows me to use left, right, botom*/
 }
 
 .navbar a.active::after {       /*Active after is utilized to imput the underlining of the page*/
@@ -228,16 +228,5 @@ body {
 @media (max-width: 700px) {    
     .footer-content {
         flex-direction: column;
-    }
-
-    .contact-boxes {
-        grid-template-columns: 1fr 1fr;
-        width: 100%;
-        max-width: 390px;
-    }
-
-    .founder-box {
-        width: 100%;
-        max-width: 390px;
     }
 }
