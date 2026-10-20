@@ -223,10 +223,275 @@ body {
 	margin-top:150px;
 	border-spacing:50px;
 }
- /*@media makes the footer fit in reagardless of device size*/
- 
-@media (max-width: 700px) {    
-    .footer-content {
-        flex-direction: column;
+/*Thank you message*/
+
+.thank-you-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.thank-you-btn {
+    background-color: #073574;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.thank-you-btn:hover {
+    background-color: #0b4a9b;
+}
+
+.thank-you-message {
+    display: none;
+    margin-top: 15px;
+    padding: 20px;
+    background-color: #f2f2f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* Adapt website for smaller screens */
+@media (max-width: 700px) {
+
+    /* Logo */
+    .lg {
+        position: static; /*Stations in one position regardless of audits*/
+        text-align: center; 
     }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+        max-height: 75px;
+    }
+
+    /* Navigation bar */
+    .navbar {
+        height: auto;
+        min-height: 74px;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        padding: 10px;
+        box-sizing: border-box; /*Forces elements to stay in a confined space*/
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    /* Main content */
+    .Media {
+        padding: 10px;
+        gap: 25px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    /* Food and grocery images */
+    .Decpost img {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    /* Tikanga section on the index page */
+    .Tikanga {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .Tikanga img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Restaurant and grocery information */
+    .information-section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .info-top {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 5px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .category {
+        padding: 8px 12px;
+    }
+
+    .stars {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .details {
+        width: 100%;
+        box-sizing: border-box;
+        grid-template-columns: 1fr; /*Vertically stacking all elemnts in the deatils section*/
+    }
+
+    .restaurant-contact {
+        border-right: none;
+        border-bottom: 1px solid #888;
+        gap: 12px;
+        padding: 12px 5px;
+        overflow-wrap: anywhere; /*Overflow-wrap ensures the text stays wihtin it's container and elevates aesthetics on smaller devices */
+    }
+
+    .description {
+        padding: 20px 12px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Contact page */
+    .Contact {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact {
+        width: 100%;
+        margin-top: 40px;
+        border-spacing: 10px;
+        table-layout: fixed;
+    }
+
+    .contact td {
+        width: 50%;
+        padding: 0;
+    }
+
+    .Contact-Section {
+        width: 100%;
+        box-sizing: border-box;
+        border-width: 3px;
+        overflow-wrap: anywhere;
+    }
+
+    .Contact-Section h1 {
+        font-size: 20px;
+    }
+
+    .Contact-Section h2 {
+        font-size: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    /* Thank you message */
+    .thank-you-container {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .thank-you-message {
+        overflow-wrap: anywhere;
+    }
+
+    /* Social media links */
+    .social-emails {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+    }
+}
+
+/* Adapt website for very small screens */
+@media (max-width: 400px) {
+
+    .navbar {
+        gap: 8px 12px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .Media {
+        padding: 5px;
+    }
+
+    .Tikanga {
+        padding: 12px;
+    }
+
+    .info-top {
+        justify-content: center;
+    }
+
+    .category {
+        font-size: 12px;
+    }
+
+    .stars {
+        font-size: 21px;
+    }
+
+    .contact {
+        border-spacing: 5px;
+    }
+
+    .Contact-Section {
+        border-width: 2px;
+    }
+
+    .Contact-Section h1 {
+        font-size: 16px;
+    }
+
+    .Contact-Section h2 {
+        font-size: 13px;
+    }
+}
+
+.social-emails {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom p {
+    text-align: center;
 }

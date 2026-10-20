@@ -39,7 +39,6 @@
 				<div class="Contact-Section">
 					<h1>Address</h1>
 					<h2>1B Nor'east Drive
-						<br>
 						Northcross
 					</h2>
 				</div>
@@ -53,4 +52,33 @@
 		</tr>
 	</table>
 </div>
+
+<div class="thank-you-container">
+    <button class="thank-you-btn" onclick="toggleMessage()">
+        Thank you!
+    </button>
+
+    <div id="thankYouMessage" class="thank-you-message">
+        <p>
+            Contact the founder of the website at one of
+            the links above. Any inquiries about the website
+            can be routed through the founder. Kindly report
+            any faults or problems within the website to
+            the founder.
+        </p>
+
+        <p><strong>Thank you! And enjoy your savings!</strong></p>
+
+<script>
+function toggleMessage() {
+    const message =
+        document.getElementById("thankYouMessage");
+
+    if (message.style.display === "block") {
+        message.style.display = "none";
+    } else {
+        message.style.display = "block";
+    }
+}
+</script>
 </html>
